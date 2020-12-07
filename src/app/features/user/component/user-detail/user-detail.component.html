@@ -1,0 +1,43 @@
+<mat-progress-bar mode="indeterminate" *ngIf="!userDetail"></mat-progress-bar>
+
+<div mat-dialog-content *ngIf="userDetail">
+
+    <div fxLayout="row wrap" fxLayoutGap="grid">
+        <div fxFlex.xs="100%" fxFlex.sm="33%">
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title>
+                        <p>
+                            {{ userDetail.title }} {{ userDetail.firstName | uppercase }}
+                            {{ userDetail.lastName | uppercase }}
+                        </p>
+                    </mat-card-title>
+                </mat-card-header>
+                <img mat-card-image src="{{ userDetail.picture }}">
+                <mat-card-content>
+                    User ID: {{ userDetail.id }} <br />
+                    Gender: {{ userDetail.gender }} <br />
+                    Date Of Birth: {{ userDetail.dateOfBirth }} <br />
+                    Register Date: {{ userDetail.registerDate }} <br /> <br />
+
+                    Email: {{ userDetail.email }} <br />
+                    Phone: {{ userDetail.phone }} <br /> <br />
+
+
+                    <p>Address:</p>
+                    {{ userDetail.location.country }}, {{ userDetail.location.state }}, {{ userDetail.location.city }}
+                    <br />
+                    {{ userDetail.location.street }} <br /> <br />
+
+                    <img class="w-100" src="{{ googleMapUrl }}" alt="dummy user map">
+
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+
+</div>
+
+<div mat-dialog-actions>
+    <button mat-button mat-dialog-close>Close</button>
+</div>

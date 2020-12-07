@@ -30,4 +30,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
     [x] Front-end Desain
     [ ] Data Connection from 3party
-    
+    [ ] State Management (MVP [https://indepth.dev/posts/1070/model-view-presenter-with-angular])
+    [ ] State Management to View
