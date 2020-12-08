@@ -4,6 +4,8 @@
 ## Step by step
 
     [x] Front-end Desain
+    [x] Github
+    [x] Firebase Hosting
     [x] Consume API from [Dummyapi](https://dummyapi.io)
     [x] clean code
         - SOLID
