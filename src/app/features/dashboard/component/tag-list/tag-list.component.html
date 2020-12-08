@@ -1,0 +1,18 @@
+<mat-progress-bar mode="indeterminate" *ngIf="!tagList"></mat-progress-bar>
+
+<div *ngIf="tagList" style="height: 100vh;">
+    <div fxFlexFill fxLayout="row wrap" fxLayoutGap="16px grid">
+        <div [fxFlex]="(100/gridColumns) + '%'" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let u of tagList.data">
+            <mat-card class="mat-elevation-z4">
+                <mat-card-header>
+                    <mat-card-title> {{ u }} </mat-card-title>
+                </mat-card-header>
+                
+                <mat-card-actions>
+                    <button mat-button (click)="postByTag(u)">Post By Tag</button>
+                </mat-card-actions>
+
+            </mat-card>
+        </div>
+    </div>
+</div>

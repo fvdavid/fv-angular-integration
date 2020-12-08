@@ -4,9 +4,9 @@ import { SideNavComponent } from './side-nav/side-nav.component';
 import { TopNavComponent } from './top-nav/top-nav.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AppRoutingModule } from '../app-routing.module';
-import { MaterialModule } from '../shared/material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { AppRoutingModule } from 'src/app/app-routing.module';
+import { MaterialModule } from 'src/app/shared/material/material.module';
 
 @NgModule({
   declarations: [

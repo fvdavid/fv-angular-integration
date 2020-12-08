@@ -6,9 +6,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { LayoutModule } from './layout/layout.module';
 import { MaterialModule } from './shared/material/material.module';
 import { FeaturesModule } from './features/features.module';
+import { LayoutModule } from './core/layout/layout.module';
 
 @NgModule({
   declarations: [

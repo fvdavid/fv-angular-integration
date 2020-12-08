@@ -1,0 +1,38 @@
+<mat-progress-bar mode="indeterminate" *ngIf="!allPost"></mat-progress-bar>
+
+<div *ngIf="allPost" style="height: 100vh;">
+    <div fxFlexFill fxLayout="row wrap" fxLayoutGap="16px grid">
+        <div [fxFlex]="(100/gridColumns) + '%'" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let u of allPost.data">
+            <mat-card class="mat-elevation-z4">
+                <mat-card-header>
+                    <img mat-card-avatar src="{{ u.owner.picture }}">
+                    <mat-card-title> {{ u.owner.firstName }} {{ u.owner.lastName}} </mat-card-title>
+                </mat-card-header>
+                <br />
+                <img mat-card-image src="{{ u.image }}">
+                <mat-card-content>
+                    <mat-chip-list class="example-chip" cdkDropList cdkDropListOrientation="horizontal"
+                        (cdkDropListDropped)="drop($event)">
+                        <mat-chip class="example-box" cdkDrag *ngFor="let fv of u.tags">
+                            {{ fv }}
+                        </mat-chip>
+                    </mat-chip-list>
+
+                    <p>
+                        {{ u.text }}
+                    </p>
+                    <mat-grid-list cols="2" rowHeight="2:1">
+                        <mat-grid-tile style="text-align: start;"> {{ u.likes }} likes </mat-grid-tile>
+                        <mat-grid-tile style="text-align: end;"> {{ u.publishDate | date:'MMM d, y' }} </mat-grid-tile>
+                    </mat-grid-list>
+                </mat-card-content>
+
+                <mat-card-actions>
+                    <button mat-button (click)="gotoComment(u.id)">Show Comment</button>
+                    <button mat-button (click)="gotoOwner(u.owner.id)">Show Owner</button>
+                </mat-card-actions>
+
+            </mat-card>
+        </div>
+    </div>
+</div>
