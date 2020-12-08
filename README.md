@@ -29,5 +29,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Step by step
 
     [x] Front-end Desain
-    [ ] Data Connection from 3party
+    [x] Data Connection from 3party
+    [ ] State Management (MVP) [soon]
     
