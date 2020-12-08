@@ -8,7 +8,8 @@
     [x] clean code
         - SOLID
         - DRY
-    [ ] State Management (MVP) [soon]
+    [x] Model View Control (MVC)
+    [ ] State Management (MVP) [..soon]
 
 ## Development server
 
