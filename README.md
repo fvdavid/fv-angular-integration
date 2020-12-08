@@ -1,10 +1,10 @@
 # FvRestApi
-    Web App
+    Web Application.
 
 ## Step by step
 
     [x] Front-end Desain
-    [x] Data Connection from 3party
+    [x] Consume API from [Dummyapi](https://dummyapi.io)
     [x] clean code
         - SOLID
         - DRY

@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "dummyapi-fvdavid",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
