@@ -24,10 +24,7 @@ export class UserCommentComponent implements OnInit {
   }
 
   getPostComment(id: string) {
-    this.userService.getPostsComment(id).subscribe(xx => {
-      this.postComments = xx;
-      console.log('xx ---------> ', this.postComments);
-    });
+    this.userService.getPostsComment(id).subscribe(xx => this.postComments = xx);
   }
 
 }

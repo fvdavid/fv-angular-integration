@@ -8,13 +8,12 @@
                 <mat-card-header>
 
                     <mat-card-title>
-                        <img mat-card-avatar src="{{ f.owner.picture }}">
-                        <p>
+                        <span>
+                            <img mat-card-avatar src="{{ f.owner.picture }}">
                             {{ f.owner.firstName | uppercase }}
-
-                            <span style="font-size: 0.6em;">
-                                {{ f.publishDate | date:'medium' }}
-                            </span>
+                        </span>
+                        <p style="font-size: 0.6em;">
+                            {{ f.publishDate | date:'medium' }}
                         </p>
                     </mat-card-title>
                 </mat-card-header>

@@ -15,7 +15,6 @@ export class UserPostsComponent implements OnInit {
 
   userPosts: UserPosts;
   postComments: PostComment;
-  isComment = false;
 
   gridColumns = 4;
 

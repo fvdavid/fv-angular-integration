@@ -29,6 +29,10 @@ const routes: Routes = [
     component: TagListComponent
   },
   {
+    path: 'post-by-tag/:tagName',
+    component: PostByTagComponent
+  },
+  {
     path: 'post-by-tag',
     component: PostByTagComponent
   },

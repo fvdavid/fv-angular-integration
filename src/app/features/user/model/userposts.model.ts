@@ -20,5 +20,5 @@ export interface UserPost {
 }
 
 export interface Tag {
-
+    name?: string;
 }
